@@ -1,0 +1,4 @@
+<div class="home_container">
+  <p>{{childMessage}}</p>
+  <app-greet (childToParentEvent)='childMessage=$event' [parentToChild]='message'></app-greet>
+</div>
