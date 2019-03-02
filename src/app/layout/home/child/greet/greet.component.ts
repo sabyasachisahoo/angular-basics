@@ -16,9 +16,7 @@ export class GreetComponent implements OnInit {
   }
 
   getTime() {
-    const date = new Date();
-    const time = date.getTime();
-    return time;
+    return new Date().toLocaleTimeString();
   }
 
   public greetParent() {
