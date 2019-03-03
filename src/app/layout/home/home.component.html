@@ -1,6 +1,10 @@
 <div class="home_container">
   <p>{{childMessage}}</p>
   <app-greet (childToParentEvent)='childMessage=$event' [parentToChild]='message'></app-greet>
-  <p>Clear the box, type 'close' to closeInterval</p>
-  <input #templeteRefViewChild>
+  <!-- <p>Clear the box, type 'close' to closeInterval</p>
+  <input #templeteRefViewChild> -->
+
+  <p *ngIf="myGenre">Your Music genre is {{myGenre}}</p>
+  <app-music-genre (setGenreFromChild)='myGenre=$event'></app-music-genre>
+  <app-music-genre (setGenreFromChild)='myGenre=$event'></app-music-genre>
 </div>
